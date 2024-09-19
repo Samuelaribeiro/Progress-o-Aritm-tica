@@ -1,0 +1,25 @@
+def calcular_an(a1, n, r):
+  """
+  Calcula o valor do termo 'an' de uma progressão aritmética.
+
+  Args:
+    a1: Primeiro termo da progressão.
+    n: Número de termos da progressão.
+    r: Razão da progressão.
+
+  Returns:
+    O valor do termo 'an'.
+  """
+  an = a1 + (n - 1) * r
+  return an
+
+# Solicita os valores ao usuário
+a1 = float(input("Digite o primeiro termo (a1): "))
+n = int(input("Digite o número de termos (n): "))
+r = float(input("Digite a razão (r): "))
+
+# Calcula o valor de an
+an = calcular_an(a1, n, r)
+
+# Imprime o resultado
+print(f"O valor de an é: {an}")
